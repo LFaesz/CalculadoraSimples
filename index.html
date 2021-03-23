@@ -9,16 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora simples</h1>
     <section>
-        <input id="n1" type="text"><input id="n2" type="text">
-        <button onclick="somar()">Somar</button>
-        <button onclick="subt()">Subtrair</button>
-        <button onclick="multi()">Multiplicar</button>
-        <button onclick="dividir()">Dividir</button> <br>
+        <h1>Calculadora simples</h1>
+        <div id="tit"><h1>Digite 2 numeros e escolha a operação!</h1></div>
+        <div id="txt1">
+            <input id="n1" type="number"><br>
+            <input id="n2" type="number">
+            <div class="botoes">
+                <button onclick="somar()">+</button> 
+                <button onclick="subt()">-</button> 
+                <button onclick="multi()">X</button>
+                <button onclick="dividir()">/</button> 
+            </div> 
+        </div>
         <p id="res"></p>
     </section>
-
 
     <script src="main.js"></script>
 </body>
